@@ -1,0 +1,38 @@
+p {
+    text-align: center;
+}
+
+.container-bg {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    &.hot{
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    &.cold{
+        background: linear-gradient(0deg, #22c1c3 0%, #2d81fd 100%);
+    }
+}
+
+.weather {
+    width: 20%;
+    margin: 0 auto;
+    background: #f2f2f2 ;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    &__container {
+        width: 100%;
+        display: block;
+    }
+    &__city {
+        font-size: 2em;
+    }
+    &__temperature {
+        font-size: 3em;
+        font-weight: bold;
+        color: rgb(80, 80, 80);
+    }
+}
